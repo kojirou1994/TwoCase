@@ -30,6 +30,8 @@ public extension TwoCase {
   }
 }
 
+extension TwoCase: Sendable where First: Sendable, Second: Sendable {}
+
 extension TwoCase: Equatable where First: Equatable, Second: Equatable {}
 
 extension TwoCase: Encodable where First: Encodable, Second: Encodable {
